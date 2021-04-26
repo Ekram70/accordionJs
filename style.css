@@ -1,0 +1,123 @@
+/* Default css */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f6483b;
+  text-transform: capitalize;
+}
+
+ul {
+  display: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* Custom css */
+.container {
+  margin: 20px;
+}
+
+.accordion {
+  background-color: #f7f7f7;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.label {
+  font-weight: 900;
+  font-size: 20px;
+  color: #42423a;
+  margin-bottom: 10px;
+}
+
+.accordion-group {
+  margin: 10px 0px;
+  position: relative;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-label {
+  font-weight: 500;
+  font-size: 18px;
+  color: #646463;
+}
+
+.accordion-icon {
+  transform: rotate(90deg);
+  background-color: #525252;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.accordion-list {
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.accordion-list-item {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-list-item:not(:last-child) {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.accordion-list-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7e7e7e;
+}
+
+.accordion-list-point {
+  color: #fff;
+  background-color: #4ac584;
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+/* css intended for js */
+
+.accordion-title-open {
+  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-icon-open {
+  background-color: #f6483b;
+  transform: rotate(270deg);
+  transition: transform 0.3s ease;
+}
+
+.active {
+  display: block;
+}
